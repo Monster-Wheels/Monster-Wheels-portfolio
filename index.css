@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-image: linear-gradient(to bottom right, #462446, #b05f6d, #eb6b56, #ffc153, #47b39d);
+}
+
+.profile-description p {
+    font-size: 12px;
+}
+.profile {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 161px;
+    margin: 5% auto 0 auto;
+    border: 3px solid rgb(22, 22, 22);
+    border-radius: 5px;
+    background-color: gray;
+}
+.profile:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.profile-description {
+    padding: 4px 16px;
+    margin: 0;
+    text-align: center;
+}
+h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 2rem;
+}
+.cards {
+    margin: 0 20px;
+    background-color: gray;
+    color: white;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.card {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-direction: column;
+}
+.card-title-large {
+    font-size: 2.5em;
+    font-family: fantasy;
+    margin: 0 0 .5rem 0;
+    padding: 2rem;
+    border-radius: 2rem 2rem 0 0;
+    transition: transform 3s;
+    transform: translateX(70%);
+}
+.card-title-small {
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 .5rem;
+    padding: 1rem;
+}
+.card-description {
+    display: inline-block;
+    margin: .3rem;
+    padding: 1rem;
+    color: black;
+}
+.card-cta {
+    align-self: flex-end;
+    margin: 0 0.5rem .5rem 0;
+    text-decoration: none;
+    color:  rgb(22, 22, 22);
+    font-size: 2em;
+}
+.card:hover .card-title-large {
+    transform: translateX(0);
+}
+.g-link {
+    color: rgb(29, 29, 245);
+}
+/* Watsapp */
+.card.watsapp:hover {
+    background-color: rgb(25, 231, 25);
+    border-radius: 2rem;
+}
+.watsapp .card-title-small {
+    color:  rgb(25, 231, 25);
+}
+.card.watsapp:hover .card-title-small {
+    color: white;
+}
+/* Instagram */
+.card.instagram:hover {
+    background-image: linear-gradient(to right top, rgb(226, 226, 51), rgb(231, 42, 42) 50%, rgb(148, 30, 148));
+    border-radius: 2rem;
+}
+.instagram .card-title-small {
+    color: rgb(226, 226, 51);
+}
+.card.instagram:hover .card-title-small {
+    color: white;
+}
+/* Gmail */
+.card.gmail:hover {
+    background-image: linear-gradient(to right top, rgb(231, 42, 42), rgb(73, 102, 231));
+    border-radius: 2rem;
+}
+.gmail .card-title-small {
+    color: rgb(73, 102, 231);
+}
+.card.gmail:hover .card-title-small {
+    color: white;
+}
+/* Github */
+.card.github:hover {
+    background-color: rgb(238, 63, 63);
+    border-radius: 2rem;
+}
+.github .card-title-small {
+    color:  rgb(235, 22, 22);
+}
+.card.github:hover .card-title-small {
+    color: white;
+}
+@media screen and (max-width:960px) {
+    .container {
+        margin: 4rem 2rem;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .cards {
+        margin: 30px 10px;
+        background-color: gray;
+        color: white;
+        align-self: center;
+    }
+    .card-title-large {
+        font-size: 2em;
+        margin: 1rem 0 0 0;
+        padding: 1rem;
+        transform: translateX(-10%);
+    }
+    .card-title-small {
+        font-size: 1em;
+        margin: 0 .3rem;
+        padding: .5rem;
+    }
+    .card-description {
+        display: inline-block;
+        margin: .3rem;
+    }
+    .card-cta {
+        font-size: 1.5em;
+        align-self: flex-end;
+    }
+    .card:hover .card-title-large {
+        transform: translateX(0);
+    }
+}
+@media screen and (max-width: 500px) {
+    .container {
+        margin: 2rem 1rem;
+    }
+    .cards {
+        margin: 15px 10px;
+    }
+    .card-title-large {
+        transform: translateX(-15%);
+    }
+    .card-description {
+        display: inline-block;
+        margin: .2rem;
+    }
+    .card-cta {
+        font-size: 1.5em;
+        align-self: flex-end;
+    }
+}
